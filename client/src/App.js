@@ -12,7 +12,8 @@ function App() {
 
         <Routes>
           <Route path='/create' element={<CreateForm />} />
-          <Route path='/' element={<Home />} />
+          <Route path='/pageNumber/:pageNumber' element={<Home />} />
+          <Route path='/' element={<Home />} exact />
         </Routes>
       </div>
     </Router>
