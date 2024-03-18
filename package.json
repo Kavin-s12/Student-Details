@@ -1,0 +1,25 @@
+{
+  "name": "student",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon backend/index",
+    "import": "node backend/seeder",
+    "destroy": "node backend/seeder -d",
+    "server": "nodemon backend/index",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.3",
+    "express-validator": "^7.0.1",
+    "mongoose": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
