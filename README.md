@@ -16,13 +16,16 @@
    - npm install
    - cd client
    - npm install
-4. Start the MERN stack application: - npm run dev
+4. Start the MERN stack application (back to the extracted folder):
+   - cd ..
+   - npm run dev
 
 ### Import Data to MongoDB
 
 1. Open a new terminal or command prompt.
 2. Navigate to the directory where you extracted the code.
 3. Run the following command to import data to MongoDB: - npm run import
+4. if want, data can be destroyed using - npm run destroy
 
 ## Usage
 
